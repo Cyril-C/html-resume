@@ -76,7 +76,7 @@ li{
 #title{
   position: relative;
   left: 0.55in;
-  margin-bottom: 0.3in;
+  margin-bottom: 0.1in;
   line-height: 1.2;
 }
 
@@ -93,13 +93,21 @@ li{
 
 .subtitle{
   text-transform: none;
+  font-weight: 500;
+  font-size: 15pt;
+  line-height: 1.5;
+}
+
+.description{
+  text-transform: none;
   font-size: 8pt;
+  padding-top: calc(var(--row-blocks-padding-top) - 0.5pt) !important; /* not sure why but this is needed for better alignment */
 }
 
 /*** categorial blocks ***/
 
 .main-block{
-  margin-top: 0.1in;
+  margin-top: 0.05in;
 }
 
 #main h2{
@@ -147,6 +155,10 @@ li{
 }
 
 #main h2 > .fa-folder-open{
+  top: 1.5pt;
+}
+
+#main h2 > .fa-file{
   top: 1.5pt;
 }
 
